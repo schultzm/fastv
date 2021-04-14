@@ -15,3 +15,4 @@ RUN chmod +x fastv
 COPY . .
 EXPOSE 3000
 
+ENTRYPOINT ["./fastv"]
