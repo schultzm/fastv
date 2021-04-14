@@ -11,7 +11,8 @@ WORKDIR fastv/
 
 RUN make
 RUN chmod +x fastv 
+RUN make install
 
 COPY . .
 
-ENTRYPOINT ["./fastv"]
+ENTRYPOINT ["fastv"]
