@@ -10,6 +10,8 @@ RUN git clone https://github.com/schultzm/fastv.git
 WORKDIR fastv/
 
 RUN make
-RUN make install
+RUN chmod +x fastv 
 
-ENTRYPOINT [“fastv”]
+COPY . .
+EXPOSE 3000
+
