@@ -10,8 +10,7 @@ RUN git clone https://github.com/schultzm/fastv.git
 WORKDIR fastv/
 
 RUN make
-RUN chmod +x fastv 
-RUN make install
+RUN chmod +x fastv
 
 COPY . .
 
