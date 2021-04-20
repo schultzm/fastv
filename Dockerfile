@@ -14,4 +14,4 @@ RUN chmod +x fastv
 
 COPY . .
 
-ENTRYPOINT ["fastv"]
+ENTRYPOINT ["./fastv"]
